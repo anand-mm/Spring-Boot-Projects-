@@ -1,0 +1,22 @@
+spring:
+  datasource: 
+    first:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/Gepnic_local
+      username: postgres
+      password: postgres
+    second:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: postgres
+    third:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: postgres
+  jpa:
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+        show-sql: true
